@@ -166,11 +166,18 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-function calculateTip(billAmount, tipPercentage)
+function calculateTip(billAmount, tipPercentage) {
+  // const tip = partOfBillAmount; //billAmunt is 50; and .20 of 50 is tip
+  // const tipPercentage = .20; // tip percentage is .20
+  const calculateTip = billAmount * (tipPercentage / 100);
+  let tipAmount = billAmount * (tipPercentage / 100); 
+     
+      return tipAmount;
+      
+}
 
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
-
 
 /*
 Exercise 8: convertTemperature()
