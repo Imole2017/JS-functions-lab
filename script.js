@@ -1,4 +1,4 @@
-console,log('JS: loaded');
+// console,log('JS: loaded');
 
 /*
 Exercise 1: maxOfTwoNumbers()
@@ -9,23 +9,22 @@ If they're equal, return either one.
 
 Exercise 1 has been completed for you:
 */
-// maxOfTwoNumbers(3, 9)
 
-// const maxOfTwoNumbers = (num1, num2) => {
-//     console.log(num1, num2);
-//     //let num1 = 3
-//     //let num2 = 9
-//     if ( num1 >= num2 ) {
-//         // console.log('num1');
-//       return num1;
-//     } else {
-//         // console.log('num2');
-//       return num2;
-//     }
-//   }
-  
-//   console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9), 'expecting 9');
-  
+
+const maxOfTwoNumbers = (num1, num2) => {
+    console.log(num1, num2);
+    // let num1 = 3
+    // let num2 = 9
+    if (num1 >= num2) {
+        // console.log('num1');
+      return num1; // since num1 is not >= num2, this will not print 
+    } else {
+        // console.log('num2');
+      return num2; // this will print 9 if num2 > num1
+    }
+  };
+ 
+  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9), 'expectation: 9'); // this will print 9
 
 
   /*
@@ -37,19 +36,18 @@ and return 'Adult' if the age is 18 or over and 'Minor' otherwise.
 Example: isAdult(21) should return 'Adult'.
 
 Complete the exercise in the space below:
-*/
+// */
 function isAdult(age) {
-    // console.log(age, 21 >= 18)
+    console.log(age, 21 >= 18)
 
-    if ( age >= 18 ) {
-        return 'Adult'
+    if (age >= 18) {
+        return 'Adult' //when the if is true, then we will have adult; otherwise it will return minor
     } else {
         return 'Minor'
     }
-}
+};
 
-
-console.log('Exercise 2 Result:', isAdult(21));
+console.log('Exercise 2 Result:', isAdult(21), 'expectation: Adult');
 
 
 
@@ -66,9 +64,22 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
+function isCharAVowel(char) {
+  const vowels = ('a', 'e', 'i', 'o', 'u'); // lists of vowels excluding w  or y
+  // let char = (vowel)
+  
+  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char =='u') { 
+      // console.log('retun true');
+      return true; // trus if the character is a vowel
+ } else {
+  // console.log('should return false')
+      return false; // return false if otherwise
+ }
+  
+}
 
-
-// console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel("a")); // testing the code: if the char is changed from 'a' to 'd' we will get false
+//console.log('Exercise 3 Result:', isCharAVowel("d")); // false becos 'd' is not a char in vowels
 
 
 /*
@@ -82,10 +93,12 @@ should return 'johnsmith@example.com'.
 
 Complete the exercise in the space below:
 */
+function generateEmail(name, domain) {
+  let emailAddress = ('tito@gassembly.com')
+   return emailAddress;
+}
 
-
-
-// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log('Exercise 4 Result:', generateEmail('tito', 'gassembly.com'));
 
 
 /*
@@ -99,10 +112,14 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 Complete the exercise in the space below:
 */
+const greetUser = (user, timeOfDay) => {
+  console.log(user, timeOfDay); //user = Tito, timeOfDay is evening
+     let greetUser = `Good ${timeOfDay}, ${user}!` //imploring template literals
+     return greetUser;
+}
 
 
-
-// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 5 Result:', greetUser("Tito", "evening"));
 
 
 /*
@@ -116,9 +133,26 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
+// let max = 10
+
+const maxOfThree = ( num1, num2, num3) => {
+    
+    if (num1 >= num2 && num1 >= num3) {
+        // console.log('max is num1');
+        return num1;
+        
+    } else if (num2 >= num3 && num2 >= num1) {
+        // console.log('max is num2')
+        return num2;
+
+    } else {
+        // console.log('max is num3');
+        return num3;
+    }
+}
 
 
-// console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8)); // return/largest is 10; num2 
 
 
 /*
