@@ -138,19 +138,18 @@ Complete the exercise in the space below:
 const maxOfThree = ( num1, num2, num3) => {
     
     if (num1 >= num2 && num1 >= num3) {
-        // console.log('max is num1');
+        // console.log('max is num1'); // using code block to check my code
         return num1;
         
     } else if (num2 >= num3 && num2 >= num1) {
-        // console.log('max is num2')
+        // console.log('max is num2') // using code block to check my code
         return num2;
 
     } else {
-        // console.log('max is num3');
+        // console.log('max is num3'); // using code block to check my code
         return num3;
     }
 }
-
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8)); // return/largest is 10; num2 
 
@@ -167,9 +166,10 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
+function calculateTip(billAmount, tipPercentage)
 
 
-// console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('Exercise 7 Result:', calculateTip(50, 20));
 
 
 /*
