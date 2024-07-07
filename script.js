@@ -118,7 +118,6 @@ const greetUser = (user, timeOfDay) => {
      return greetUser;
 }
 
-
 console.log('Exercise 5 Result:', greetUser("Tito", "evening"));
 
 
@@ -169,15 +168,14 @@ Complete the exercise in the space below:
 function calculateTip(billAmount, tipPercentage) {
   // const tip = partOfBillAmount; //billAmunt is 50; and .20 of 50 is tip
   // const tipPercentage = .20; // tip percentage is .20
-  const calculateTip = billAmount * (tipPercentage / 100);
+  const calculateTip = billAmount * (tipPercentage / 100); 
   let tipAmount = billAmount * (tipPercentage / 100); 
      
       return tipAmount;
       
 }
 
-
-console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('Exercise 7 Result:', calculateTip(50, 20)); // expected return is 10
 
 /*
 Exercise 8: convertTemperature()
@@ -193,7 +191,7 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-
+// function convertTemperature()
 
 // console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
