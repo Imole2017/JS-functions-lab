@@ -229,9 +229,24 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
+function basicCalculator(num1, num2, operation) {
+  if (operation == 'add') {
+      let sum = (num1 + num2);
+      return sum;
+  } else if (operation == 'substract') {
+      let difference = (num1 - num2);
+      return substract;
+  } else if (operation == 'multiply') {
+      let outcome = (num1 * num2);
+      return outcome;
+  } else if (operation == 'divide') {
+      let divide = (num1 / num2);
+      return divide;
+  }
+}
 
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
-// console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
 
 /*
