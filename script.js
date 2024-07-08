@@ -233,19 +233,19 @@ function basicCalculator(num1, num2, operation) {
   if (operation == 'add') {
       let sum = (num1 + num2);
       return sum;
-  } else if (operation == 'substract') {
+  } else if (operation == 'subtract') {
       let difference = (num1 - num2);
-      return substract;
+      return difference;
   } else if (operation == 'multiply') {
       let outcome = (num1 * num2);
       return outcome;
   } else if (operation == 'divide') {
-      let divide = (num1 / num2);
-      return divide;
+      let result = (num1 / num2);
+      return result;
   }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
 
 
 
