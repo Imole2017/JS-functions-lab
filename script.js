@@ -191,9 +191,26 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-// function convertTemperature()
+function convertTemperature(temperature, scale) {
+  if (scale === 'C') {
+  // console.log('convert Celcius to Fahrenheit');
+// formular for finding Farenheit = (9/5)C + 32 below // formular googled; and 'C' is 32
+  let Fahrenheit = (9/5 * temperature) + 32;
+  return Fahrenheit;
+} else if (scale === 'F') {
+  // console.log('convert Fahrenheit to Celcius');
+  // formular for finding Celcius = 5/9(F - 32)  //formular googled; and when 'F' is 32
+  let Celcius = (temperature - 32) * 5/9; 
+  return Celcius; 
+} else {
+  return undefined; // if the its neither 'Celcius' nor 'Fahrenheit'
+}
 
-// console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+}
+
+
+console.log('Exercise 8 Result:', convertTemperature(32, "F")); //if arguement is change to 'F' the result will be 0 Celsius-- if arguement is changed 'C' the result will print 89.6 Fahrenheit
+
 
 
 /*
