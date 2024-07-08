@@ -68,7 +68,7 @@ function isCharAVowel(char) {
   const vowels = ('a', 'e', 'i', 'o', 'u'); // googled lists of vowels excluding w  or y
   // let char = (vowel)
   
-  if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char =='u') { 
+  if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') { 
       // console.log('retun true');
       return true; // trus if the character is a vowel
  } else {
@@ -230,16 +230,16 @@ Complete the exercise in the space below:
 */
 
 function basicCalculator(num1, num2, operation) {
-  if (operation == 'add') {
+  if (operation === 'add') {
       let sum = (num1 + num2);
       return sum;
-  } else if (operation == 'subtract') {
+  } else if (operation === 'subtract') {
       let difference = (num1 - num2);
       return difference;
-  } else if (operation == 'multiply') {
+  } else if (operation === 'multiply') {
       let outcome = (num1 * num2);
       return outcome;
-  } else if (operation == 'divide') {
+  } else if (operation === 'divide') {
       let result = (num1 / num2);
       return result;
   }
