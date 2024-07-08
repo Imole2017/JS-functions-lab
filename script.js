@@ -65,7 +65,7 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
-  const vowels = ('a', 'e', 'i', 'o', 'u'); // lists of vowels excluding w  or y
+  const vowels = ('a', 'e', 'i', 'o', 'u'); // googled lists of vowels excluding w  or y
   // let char = (vowel)
   
   if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char =='u') { 
@@ -232,6 +232,26 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
+function calculateGrade(grade) {
+  // let calculateGrade = (grade) 
+      if (grade >= 90) {
+        return 'A';
+                  
+  } else if(grade >= 80 && grade <= 89) {
+      return 'B';
+  } else if(grade >= 70 && grade <= 79) {
+      return 'C';
+  } else if(grade >= 60 && grade <= 69) {
+      return 'D';
+  } else {
+      return 'F';
+  }    
+                
+  
+}
 
 
-// console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(85)); // when you have 85 (the argument) the result will be a 'B' when changed the argument to 92, result will print an 'A', likewise if the argument is changed to 55, the result will print an 'F' 
+
+
+
