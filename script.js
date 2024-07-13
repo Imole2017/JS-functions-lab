@@ -67,7 +67,7 @@ Complete the exercise in the space below:
 function isCharAVowel(char) {
   const vowels = ('a', 'e', 'i', 'o', 'u'); // googled lists of vowels excluding w  or y
   // let char = (vowel)
-  char = char.toLowerCase() // to ensure that the code can be true when both lower and upper case is applied or used
+  char = char.toLowerCase() // to ensure that the code gives "True" result when either lower or upper case is applied or used
     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') { 
       // console.log('retun true');
       return true; // trus if the character is a vowel
