@@ -76,8 +76,6 @@ function isCharAVowel(char) {
   return false; // return false if otherwise
   }
      
- 
-  
 }
 
 console.log('Exercise 3 Result:', isCharAVowel("A")); // testing the code: if the char is changed from 'a' to 'd' we will get false
