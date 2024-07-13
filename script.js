@@ -67,7 +67,7 @@ Complete the exercise in the space below:
 function isCharAVowel(char) {
   const vowels = ('a', 'e', 'i', 'o', 'u'); // googled lists of vowels excluding w  or y
   // let char = (vowel)
-  char = char.toLowerCase() 
+  char = char.toLowerCase() // to ensure that the code can be true when both lower and upper case is applied or used
     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') { 
       // console.log('retun true');
       return true; // trus if the character is a vowel
@@ -80,7 +80,7 @@ function isCharAVowel(char) {
   
 }
 
-console.log('Exercise 3 Result:', isCharAVowel("i")); // testing the code: if the char is changed from 'a' to 'd' we will get false
+console.log('Exercise 3 Result:', isCharAVowel("A")); // testing the code: if the char is changed from 'a' to 'd' we will get false
 //console.log('Exercise 3 Result:', isCharAVowel("d")); // false becos 'd' is not a char in vowels
 
 
@@ -96,7 +96,8 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 function generateEmail(name, domain) {
-  let emailAddress = ('tito@gassembly.com')
+  let emailAddress = (name + '@' + domain);
+   
    return emailAddress;
 }
 
@@ -211,7 +212,7 @@ function convertTemperature(temperature, scale) {
 }
 
 
-console.log('Exercise 8 Result:', convertTemperature(32, "F")); //if arguement is change to 'F' the result will be 0 Celsius-- if arguement is changed 'C' the result will print 89.6 Fahrenheit
+console.log('Exercise 8 Result:', convertTemperature(32, "C")); //if arguement is change to 'F' the result will be 0 Celsius-- if arguement is changed 'C' the result will print 89.6 Fahrenheit
 
 
 
